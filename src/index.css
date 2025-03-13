@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #050a0e;
+  background-image: radial-gradient(
+    circle at top right,
+    #12ff5f40,
+    #000000 60%
+  );
+  color: #12ff5f;
+}
+
+.m-1 {
+  margin: 0.25rem /* 4px */;
+}
+.mt-2 {
+  margin-top: 1rem /* 8px */;
+}
+.p-1 {
+  padding: 0.25rem /* 4px */;
+}
+.p-2 {
+  padding: 0.5rem /* 8px */;
+}
+.p-6 {
+  padding: 1.5rem /* 24px */;
+}
+.px-1 {
+  padding-left: 0.8rem /* 4px */;
+  padding-right: 0.8rem /* 4px */;
+}
+.px-2 {
+  padding-left: 2rem /* 8px */;
+  padding-right: 2rem /* 8px */;
+}
+.px-4 {
+  padding-left: 3rem /* 20px */;
+  padding-right: 3rem /* 20px */;
+}
+.py-1 {
+  padding-top: 0.25rem /* 4px */;
+  padding-bottom: 0.25rem /* 4px */;
+}
+.py-4 {
+  padding-top: 1rem /* 16px */;
+  padding-bottom: 1rem /* 16px */;
+}
+.my-4 {
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+}
+.my-5 {
+  margin-top: 1.25rem /* 20px */;
+  margin-bottom: 1.25rem /* 20px */;
+}
+.my-8 {
+  margin-top: 2rem /* 32px */;
+  margin-bottom: 2rem /* 32px */;
+}
+.mt-4 {
+  margin-top: 1rem /* 16px */;
+}
+
+
+@media (min-width:1020px) {
+  .section-1{
+    display: flex;
+    flex-direction: row;
+    .profilePhoto{
+      margin-top: 5rem;
+    }
+  }
+}
