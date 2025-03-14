@@ -5,7 +5,7 @@ import H1 from "./General/H1";
 const Section1 = () => {
   return (
     <>
-      <section className="p-2">
+      <section className="section1 p-2">
         <NavBar />
         <div className="flex flex-col gap-8 section-1 my-8 ">
         <div>
@@ -25,7 +25,7 @@ const Section1 = () => {
             Let's connect and build something amazing together! 🚀
           </p>
         </div>
-        <div className="profilePhoto mt-4">
+        <div className="profilePhoto mt-2">
           <img className="rounded-3xl" src="src\assets\ProfilePhoto.jpg" alt="" />
         </div>
         </div>
