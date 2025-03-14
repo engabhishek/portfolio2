@@ -15,13 +15,19 @@ body {
   );
   color: #12ff5f;
 }
+.section2{
+  background-color: #050a0e;
+  background-image: radial-gradient(
+    circle at top left,
+    #4510f740,
+    #000000 70%
+  );
+}
 
 .m-1 {
   margin: 0.25rem /* 4px */;
 }
-.mt-2 {
-  margin-top: 1rem /* 8px */;
-}
+
 .p-1 {
   padding: 0.25rem /* 4px */;
 }
@@ -39,10 +45,12 @@ body {
   padding-left: 2rem /* 8px */;
   padding-right: 2rem /* 8px */;
 }
+
 .px-4 {
   padding-left: 3rem /* 20px */;
   padding-right: 3rem /* 20px */;
 }
+
 .py-1 {
   padding-top: 0.25rem /* 4px */;
   padding-bottom: 0.25rem /* 4px */;
@@ -63,8 +71,12 @@ body {
   margin-top: 2rem /* 32px */;
   margin-bottom: 2rem /* 32px */;
 }
-.mt-4 {
-  margin-top: 1rem /* 16px */;
+.mt-2 {
+  margin-top: 1rem /* 8px */;
+}
+
+.mt-12 {
+    margin-top: 3rem /* 48px */;
 }
 
 
@@ -75,5 +87,43 @@ body {
     .profilePhoto{
       margin-top: 5rem;
     }
+  }
+  .box{
+    font-size: 2rem;
+  }
+  .section2{
+    .boxItems{
+      gap:3rem;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.marquee-container {
+  width: 100%;
+  background-color: green; /* Background color */
+  color: black; /* Text color */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1.4rem 0;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
