@@ -5,7 +5,7 @@ import H1 from "./General/H1";
 const Section1 = () => {
   return (
     <>
-      <section className="section1 p-2">
+      <section className="section1 px-2">
         <NavBar />
         <div className="flex flex-col gap-8 section-1 my-8 ">
         <div>
