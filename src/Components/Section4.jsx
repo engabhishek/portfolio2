@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import H1 from "./General/H1";
 
+
+
 const Section4 = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    consent: false
+    consent: false,
   });
 
   const handleChange = (e) => {

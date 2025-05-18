@@ -17,7 +17,7 @@ const Section1 = () => {
             I'm a passionate
             <b className="text-green-500"> "frontend developer"</b> with a strong
             grip on <b className="text-green-500">"React.js" </b>
-            and a foundation in C, Python, and Java (basics). As a self-driven
+            and a foundation in JavaScript, C, Python, and Java (basics). As a self-driven
             learner, I love exploring new technologies and building interactive
             web applications. <br /> <br /> Beyond coding, you'll often find me
             on the cricket field 🏏 or enjoying classic old songs 🎶. I'm always
@@ -25,8 +25,8 @@ const Section1 = () => {
             Let's connect and build something amazing together! 🚀
           </p>
         </div>
-        <div className="profilePhoto mt-2">
-          <img className="rounded-3xl" src="src\assets\ProfilePhoto.jpg" alt="" />
+        <div className="profilePhoto mt-2 flex justify-center">
+          <img className="rounded-[50%] " src="src\assets\abhi.jpg" alt="" />
         </div>
         </div>
       </section>
