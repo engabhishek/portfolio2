@@ -1,7 +1,6 @@
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import H1 from "./General/H1";
-
-
 
 const Section4 = () => {
   const [formData, setFormData] = useState({
@@ -19,21 +18,37 @@ const Section4 = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!formData.consent) {
-      alert("Please give consent before submitting.");
-      return;
-    }
-    localStorage.setItem("contactFormData", JSON.stringify(formData));
-    alert("Form saved successfully! 🎉");
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-      consent: false,
-    });
-  };
+  // Inside your component
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (!formData.consent) {
+    alert("Please give consent before submitting.");
+    return;
+  }
+
+  emailjs
+    .send(
+      "service_mail",     // e.g. "service_abc123"
+      "template_mail",    // e.g. "template_xyz456"
+      formData,
+      "VO-qHz2jQt9w7Fl0f"      // e.g. "user_d8r17a8sd9f"
+    )
+    .then(
+      (result) => {
+        alert("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          consent: false,
+        });
+      },
+      (error) => {
+        console.error("Failed to send message:", error.text);
+        alert("Something went wrong. Please try again.");
+      }
+    );
+};
 
   return (
     <>
