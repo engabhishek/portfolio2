@@ -2,7 +2,7 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import H1 from "./General/H1";
 
-const Section4 = () => {
+const GetInTuch = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -52,7 +52,7 @@ const handleSubmit = (e) => {
 
   return (
     <>
-      <section className="section4 px-2">
+      <section className="GetInTuch px-2">
         <div className="tuch">
           <div className="flex-col gap-4">
             <div>
@@ -128,4 +128,4 @@ const handleSubmit = (e) => {
   );
 };
 
-export default Section4;
+export default GetInTuch;

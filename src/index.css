@@ -15,7 +15,7 @@ body {
   );
   color: #12ff5f;
 }
-.section2{
+.Skills{
   background-color: #050a0e;
   background-image: radial-gradient(
     circle at top left,
@@ -23,7 +23,7 @@ body {
     #000000 70%
   );
 }
-.section4{
+.GetInTuch{
   background-color: #050a0e;
   background-image: radial-gradient(
     circle at top right,
@@ -116,13 +116,13 @@ body {
   .box{
     font-size: 2rem;
   }
-  .section2{
+  .Skills{
     .boxItems{
       gap:3rem;
       margin-top: 2.5rem;
     }
   }
-  .section4{
+  .GetInTuch{
     .tuch{
       display: flex;
       justify-content: space-between;

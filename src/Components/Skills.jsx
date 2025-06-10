@@ -2,10 +2,10 @@ import React from "react";
 import H1 from "./General/H1";
 import Box from "./General/Box";
 
-const Section2 = () => {
+const Skills = () => {
   return (
     <>
-      <section className="section2">
+      <section className="Skills">
       <div className=" p-6 text-center">
         <H1 text={"MY Skills"} />
         <div className="mt-2 my-4">
@@ -30,4 +30,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default Skills;
